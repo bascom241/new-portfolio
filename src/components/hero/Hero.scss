@@ -1,0 +1,76 @@
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #11111c, #14142c);
+    display: flex; /* Flexbox to align children */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden;
+    gap: 30px;
+    
+    // position: relative; /* Make child elements' absolute positioning relative to this container */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1366px;
+    text-align: center;
+ /* Ensure it's above the sliding text */
+  
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.text h2,
+.text h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+}
+
+.imageContainer {
+
+    z-index: 8; /* Place the image above all other content */
+}
+
+
+
+.slidingTextContainer {
+    font-size: 20vh; /* Adjust size for better fit */
+    position: absolute;
+    white-space: nowrap;
+    color: #3f3f54;
+    overflow: hidden;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent it from interfering with interactions */
+}
+.iconContainer {
+    position: absolute; /* Ensure it’s positioned relative to its parent */
+    bottom: 20px;       /* Adjust the distance from the bottom */
+    left: 50%;          /* Center horizontally */
+    transform: translateX(-10%); /* Correct centering */
+    z-index: 1;         /* Set to 1 or higher to keep it above other elements */
+    color: white;       /* Ensure visibility */
+}

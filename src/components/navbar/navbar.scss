@@ -1,0 +1,39 @@
+.social {
+    display: flex;
+    gap: 15px;
+    font-size: 24px; /* Size of the icons */
+  }
+  
+  .social a {
+    color: inherit; /* Default color (can be inherited or set) */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Brand Colors */
+  .social a:nth-child(1) { color: #4267B2; } /* Facebook */
+  .social a:nth-child(2) { color: #1DA1F2; } /* Twitter */
+  .social a:nth-child(3) { color: #C13584; } /* Instagram */
+  .social a:nth-child(4) { color: #0077B5; } /* LinkedIn */
+  .social a:nth-child(5) { color: #333; } /* GitHub */
+  .social a:nth-child(6) { color: #FF0000; } /* YouTube */
+  
+  /* Hover Effects */
+  .social a:hover {
+    transform: scale(1.2); /* Slightly enlarges the icon on hover */
+    opacity: 0.8; /* Adds a slight fade effect */
+  }
+.navbar{
+    height: 100px;
+    width: 100%;
+
+    .wrapper{
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%
+    }
+}
